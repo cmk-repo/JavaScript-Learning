@@ -1,6 +1,20 @@
+//Left Triangle Pattern in Javascript
+
+function star_6(Number) {
+    let buff = "";
+    for (let j = 1; j <= Number + 1; j++) {
+        for (let k = 0; k < j; k++) {
+            buff += "*";
+        }
+        buff += "\n";
+    }
+    return buff;
+}
+
+// Right Triangle Pattern in Javascript
 function star_5(Number) {
     let buff = "";
-    for (let j = 1; j < Number; j++) {
+    for (let j = 1; j <= Number; j++) {
         for (let i = 0; i < Number - j; i++) {
             buff += " ";
         }
@@ -11,8 +25,6 @@ function star_5(Number) {
     }
     return buff;
 }
-
-
 
 function star_4(Number) {
     let buff = "";
@@ -108,7 +120,9 @@ console.log(star_4(10));
 console.log("Pattern5");
 console.log(star_5(10));
 //
-
+console.log("Pattern6");
+console.log(star_6(10));
+//
 
 //-------------- 1st test node installation Vs code
 //1st test to run type "node filename" in terminal
