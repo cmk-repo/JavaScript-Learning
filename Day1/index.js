@@ -1,17 +1,28 @@
+function star_5(Number) {
+    let buff = "";
+    for (let j = 1; j < Number; j++) {
+        for (let i = 0; i < Number - j; i++) {
+            buff += " ";
+        }
+        for (let k = 0; k < j; k++) {
+            buff += "*";
+        }
+        buff += "\n";
+    }
+    return buff;
+}
+
+
+
 function star_4(Number) {
     let buff = "";
-    for (j = 0; j < Number; j++) {
-        for (i = 0; i < Number; i++) {
-            if (j === Number - 1) {
+    for (let j = 0; j < Number; j++) {
+        for (let i = 0; i < Number; i++) {
+            if (j === Number - i) {
                 buff += "*";
             }
             else {
-                if (i == 0 || i === Number - 1) {
-                    buff += "*";
-                }
-                else {
-                    buff += " ";
-                }
+                buff += " ";
             }
         }
         buff += "\n";
@@ -92,7 +103,10 @@ console.log(star_3(5));
 //
 
 console.log("Pattern4");
-console.log(star_4(5));
+console.log(star_4(10));
+//
+console.log("Pattern5");
+console.log(star_5(10));
 //
 
 
